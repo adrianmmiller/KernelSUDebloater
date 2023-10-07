@@ -7,9 +7,9 @@ which is found here: https://xdaforums.com/t/magisk-module-systemless-debloater.
 
 This is a quick and dirty proof of concept app debloater, which i may or may not add the app listing ability like zgfg's/ipdevs module to.
 
-This was a late night POC script and i alreayd had a SystemlessDebloater.cfg, so no reason to go too deep on it at the time....and im lazy
+This was a late night POC script and i already had a SystemlessDebloater.cfg, so no reason to go too deep on it at the time....and im lazy
 
-I have long used the Magisk Systemless Debloater by XDA's @zgfg and @ipdev
+I have long used the Magisk Systemless Debloater by XDA's #@zgfg# and #@ipdev#
 
 But occaisonally i like to play with KernelSU which does things a little differently...it uses OverlayFS, whereas the Systemless Debloater Magisk Module uses bind, and is therefore not compatible with KernelSU
 
@@ -21,7 +21,7 @@ Because im lazy i like to use one config file where possible, so im reusing my S
 
 - Youve used the SystemlessDebloater Magisk Module before:
 
-  - Copy your SystemlessDebloater.cfg to /sdcard/Dwonloads/ like normal
+  - Copy your SystemlessDebloater.cfg to /sdcard/Download/ like normal
   - Flash this module
   - Reboot
 
