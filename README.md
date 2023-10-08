@@ -65,6 +65,8 @@ Apart from the usual module install log, a log of the process in the script func
 ### Debloating New/Additonal Apps:
 
 - Edit `/sdcard/Download/SystemlessDebloater.cfg`
+- Reboot
+- Reboot a second time as on the first Reboot, `post-mount.fs` runs to create the blank overlays, but it doesnt apply them in real time
 
 
 ---
