@@ -9,7 +9,7 @@ This is a quick and dirty proof of concept app debloater, which i may or may not
 
 This was a late night POC script and i already had a SystemlessDebloater.cfg, so no reason to go too deep on it at the time....and im lazy
 
-I have long used the Magisk Systemless Debloater by XDA's #@zgfg# and #@ipdev#
+I have long used the Magisk Systemless Debloater by XDA's @zgfg and @ipdev
 
 But occaisonally i like to play with KernelSU which does things a little differently...it uses OverlayFS, whereas the Systemless Debloater Magisk Module uses bind, and is therefore not compatible with KernelSU
 
