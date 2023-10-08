@@ -13,7 +13,7 @@ I have long used the Magisk Systemless Debloater by XDA's **@zgfg** and **@ipdev
 
 But occaisonally i like to play with KernelSU which does things a little differently...it uses OverlayFS, whereas the Systemless Debloater Magisk Module uses bind, and is therefore not compatible with KernelSU
 
-Because im lazy i like to use one config file where possible, so im reusing my SystemlessDebloater.cfg from that magisk module, and is stored under Download (i.e. /sdcard/Download/SystemlessDebloater.cfg)
+Because im lazy i like to use one config file where possible, so im reusing my SystemlessDebloater.cfg from that magisk module, and is stored under Download (i.e. `/sdcard/Download/SystemlessDebloater.cfg`)
 
 ## Intallation: 
 
@@ -21,12 +21,11 @@ Because im lazy i like to use one config file where possible, so im reusing my S
 
 - Youve used the SystemlessDebloater Magisk Module before:
 
-  - Copy your SystemlessDebloater.cfg to /sdcard/Download/ like normal
-  - Flash this module
-  - Reboot
+  - Copy your `SystemlessDebloater.cfg` to `/sdcard/Download/` like normal
 
 - Youve never used the SystemlessDebloater Magisk Module before:
-  - Create your own SystemlessDebloater.cfg from scratch by adding app names to a text file 
+  - Create your own `SystemlessDebloater.cfg` from scratch by adding app names to a text file 
+
     (Use Notepad++ if on Windows and set EOL Conversion to Unix)
 
   - The file might contain for example:
@@ -47,40 +46,53 @@ Because im lazy i like to use one config file where possible, so im reusing my S
       YouTubeMusicPrebuilt
       ```
 
-- Copy the file to **/sdcard/Download/**
+- Copy the file to `/sdcard/Download/`
 
 ### Module Installation
 
-- Install the module from Releases
+- Install the module from [Releases] (/releases/latest)
 - Reboot
+- Reboot a second time as on the first Reboot, `post-mount.fs` runs to create the blank overlays, but it doesnt apply them in real time
 
-Apart from the usual module install log, a log of the process in the script function in customize.sh is output to:
-
-```/sdcard/KernelSUDebloat.txt```
+Apart from the usual module install log, a log of the process in the script function in customize.sh is output to `/sdcard/KernelSUDebloat.txt`
 
 ---
 
+### Debloating New/Additonal Apps:
+
+- Edit `/sdcard/Download/SystemlessDebloater.cfg`
+
+
+---
 
 #### App "Recovery":
 
 To recover a single, or multiple app(s):
 
-- Remove the module
+- Uninstall the module
 - Reboot
-- All debloated apps are restored
-- Edit the /sdcard/Download/SystemlessDebloater.cfg to remove the wanted apps
-- Flash the module again
+(All debloated apps are restored)
+- Edit the `/sdcard/Download/SystemlessDebloater.cfg` to remove the wanted apps
+- Install the module again
 - Reboot
+- Reboot a second time as on the first Reboot, `post-mount.fs` runs to create the blank overlays, but it doesnt apply them in real time
 
 ---
 
 #### Uninstall:
 
-The modules effects are fully reversible:
-- Toggle module off (for a temp rebloat)
+The modules effects are fully reversible....
+
+Temporarily - 
+
+- Toggle module off (for a temp rebloat - `post-mount.sh` (active script that does the work) is NOT called when disabled)
 - Reboot
 
+  Note: Of course to re-Debloat again just enable the module and Reboot
+
 OR
+
+Permanently -
 
 - Uninstall it and reboot to return to permanent bloaty goodness
 - Reboot
