@@ -5,7 +5,7 @@ which is found here: https://xdaforums.com/t/magisk-module-systemless-debloater.
 
 
 **Note:** For the moment until i figure out the bug in KernelSU stopping the script from running on boot from the module directory, the version in Releases debloats packages on install ONLY and IS reversible (via disabling/uninstall) but not as dynamic as
-i had planned and document below (i .e. you cant just add a package to `SystemlessDebloater.cfg' and reboot, you would have to add it and re-install the module. Hopefully i can get it work as i had planned soon.
+i had planned and document below (i .e. you cant just add a package to `SystemlessDebloater.cfg' and reboot, you would have to add it and re-install the module). Hopefully i can get it work as i had planned soon.
 
 ---
 
