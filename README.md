@@ -4,8 +4,8 @@ Debloat Apps Under KernelSU Using OverlayFS (Inspired by the Systemless Debloate
 which is found here: https://xdaforums.com/t/magisk-module-systemless-debloater.4180083/
 
 
-**Note:** For the moment until i figure out the bug in KernelSU stopping the script from running on boot from the module directory, the version in Releases debloats packages on install ONLY and IS reversible (via disabling/uninstall) but not as dynamic as
-i had planned and document below (i .e. you cant just add a package to `SystemlessDebloater.cfg' and reboot, you would have to add it and re-install the module). Hopefully i can get it work as i had planned soon.
+**Note:** For the moment until i figure out the bug in KernelSU stopping the script from running on boot from the module directory and doign what id hoped, the version in Releases debloats packages on install ONLY and IS reversible (via disabling/uninstall) but not as dynamic as
+i had planned. Hopefully, ill figure out a solution soonish., but till then this functions in the same fashion as the Systemless Debloater script in magisk.
 
 ---
 
@@ -59,29 +59,6 @@ Because im lazy i like to use one config file where possible, so im reusing my S
 - Reboot a second time as on the first Reboot, `post-mount.fs` runs to create the blank overlays, but it doesnt apply them in real time
 
 Apart from the usual module install log, a log of the process in the script function in customize.sh is output to `/sdcard/KernelSUDebloat.txt`
-
----
-
-### Debloating New/Additonal Apps:
-
-- Edit `/sdcard/Download/SystemlessDebloater.cfg`
-- Reboot
-- Reboot a second time as on the first Reboot, `post-mount.fs` runs to create the blank overlays, but it doesnt apply them in real time
-
-
----
-
-#### App "Recovery":
-
-To recover a single, or multiple app(s):
-
-- Uninstall the module
-- Reboot
-(All debloated apps are restored)
-- Edit the `/sdcard/Download/SystemlessDebloater.cfg` to remove the wanted apps
-- Install the module again
-- Reboot
-- Reboot a second time as on the first Reboot, `post-mount.fs` runs to create the blank overlays, but it doesnt apply them in real time
 
 ---
 
