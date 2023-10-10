@@ -4,7 +4,7 @@ Debloat Apps Under KernelSU Using OverlayFS (Inspired by the Systemless Debloate
 which is found here: https://xdaforums.com/t/magisk-module-systemless-debloater.4180083/
 
 
-**Note:** For the moment until i figure out the bug in KernelSU stopping the script from running on boot from the module directory and doign what id hoped, the version in Releases debloats packages on install ONLY and IS reversible (via disabling/uninstall) but not as dynamic as
+**Note:** For the moment until i figure out the bug in KernelSU stopping the script from running on boot from the module directory and doing what id hoped to achieve, the version in Releases debloats packages on install ONLY and IS reversible (via disabling/uninstall) but not as dynamic as
 i had planned. Hopefully, ill figure out a solution soonish., but till then this functions in the same fashion as the Systemless Debloater script in magisk.
 
 ---
