@@ -1,6 +1,0 @@
-id=adrianmmiller.KSUdebloat
-name=KernelSU App Debloater
-version=v1.0
-versionCode=1
-author=adrianmmiller
-description=Debloat Apps Under KernelSU Using OverlayFS (Inspired by the Systemless Debloater Module by zgfg & ipdev on XDA)
